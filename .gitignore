@@ -1,0 +1,14 @@
+# Java build files
+build/
+bin/
+target/
+*.class
+
+# Database credentials
+src/main/resources/db.properties
+
+# macOS
+.DS_Store
+
+# Eclipse workspace
+.metadata/

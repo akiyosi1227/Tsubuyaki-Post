@@ -1,0 +1,63 @@
+/* ============================================================
+   つぶやきポスト - グローバルスタイル
+   ============================================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* カラーパレット */
+:root {
+  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --primary-color: #667eea;
+  --primary-dark: #764ba2;
+  --success-color: #2d7a3e;
+  --error-color: #c33;
+  --text-dark: #333;
+  --text-medium: #555;
+  --text-light: #666;
+  --text-lighter: #999;
+  --border-light: #e0e0e0;
+  --bg-light: #f0f0f0;
+  --white: #ffffff;
+}
+
+/* リセット */
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* フォーム要素 */
+input[type="text"],
+input[type="password"] {
+  font-family: inherit;
+}
+
+/* レスポンシブ */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 100%;
+  }
+}
