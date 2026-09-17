@@ -1,0 +1,10 @@
+.git
+.gitignore
+.settings
+.classpath
+.project
+target
+README.md
+images
+*.log
+.DS_Store
