@@ -34,6 +34,13 @@
             <artifactId>postgresql</artifactId>
             <version>42.7.13</version>
         </dependency>
+
+        <!-- パスワードを安全にハッシュ化するBCrypt -->
+        <dependency>
+            <groupId>org.mindrot</groupId>
+            <artifactId>jbcrypt</artifactId>
+            <version>0.4</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -41,6 +48,7 @@
         <finalName>ROOT</finalName>
 
         <plugins>
+            <!-- Java 21向けにコンパイル -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -50,6 +58,7 @@
                 </configuration>
             </plugin>
 
+            <!-- Tomcatへ配置するWARファイルを作成 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
@@ -62,4 +71,3 @@
     </build>
 
 </project>
-

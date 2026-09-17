@@ -48,21 +48,6 @@ CREATE INDEX idx_mutters_name ON mutters(name);
 CREATE INDEX idx_mutters_created_at ON mutters(created_at DESC);
 
 -- ============================================================
--- Sample Data (Optional - for testing)
--- ============================================================
--- Insert sample users
-INSERT INTO users (name, pass) VALUES 
-    ('testuser', '1234'),
-    ('alice', 'password123'),
-    ('bob', 'password456');
-
--- Insert sample mutters
-INSERT INTO mutters (name, text) VALUES 
-    ('testuser', 'これが最初のつぶやきです！'),
-    ('alice', 'PostgreSQLへの移行が完了しました'),
-    ('bob', 'つぶやきアプリ、便利ですね');
-
--- ============================================================
 -- Verification Queries
 -- ============================================================
 -- SELECT * FROM users;
